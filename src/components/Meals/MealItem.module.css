@@ -1,9 +1,14 @@
 .meal {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+.meal div {
+  flex: 1; /* Allow the inner div to take available space */
 }
 
 .meal h3 {
@@ -12,6 +17,8 @@
 
 .description {
   font-style: italic;
+  word-wrap: break-word; /* Break long words */
+  white-space: pre-wrap; /* Handle line breaks */
 }
 
 .price {
