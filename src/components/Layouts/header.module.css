@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: #ebc9bc;
 }
 
 .header {
@@ -10,7 +11,7 @@ body {
   left: 0;
   width: 100%;
   height: 5rem;
-  background-color: #8a2b06;
+  background-color: #662106;
   color: white;
   display: flex;
   justify-content: space-between;
