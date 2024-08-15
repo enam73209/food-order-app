@@ -23,3 +23,16 @@ Before you begin, ensure you have the following installed:
 3. Start the development server:
     ```bash
     npm run dev
+
+## 🛠️ Built With
+
+- **React**: For building the user interface and managing the state.
+- **Vite**: A modern frontend build tool that provides lightning-fast HMR.
+- **JSX**: For rendering UI components.
+- **CSS**: Styling the components for a clean and responsive UI.
+
+### React State Management:
+
+- **useState**: For handling simple state management.
+- **useContext** & **Provider**: For managing global app state.
+- **useReducer**: To handle more complex state logic, particularly for managing the cart.
