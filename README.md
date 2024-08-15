@@ -17,3 +17,9 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/enam73209/food-order-app.git
    cd food-order-app
+2. Install dependencies:
+    ```bash
+    npm install
+3. Start the development server:
+    ```bash
+    npm run dev
