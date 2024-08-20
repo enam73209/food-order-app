@@ -44,3 +44,9 @@
   background-color: #8a2b06;
   color: white;
 }
+.successMessage{
+  color: black;
+  font-weight: 800;
+  background-color: #70e7ab;
+  text-align: center;
+}

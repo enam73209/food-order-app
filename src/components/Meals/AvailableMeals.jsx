@@ -17,7 +17,6 @@ const AvailableMeals = () => {
       throw new Error("Something went wrong! Please try again later");
     }
     const responseData = await response.json();
-    console.log(responseData);
     const loadedMeals = [];
     for (const key in responseData) {
       const meal = responseData[key];
@@ -34,7 +33,6 @@ const AvailableMeals = () => {
     }
     setMeals(loadedMeals);
     setIsLoading(false);
-    console.log(meals);
   };
   useEffect(() => {
     fetchMeals().catch((error) => {

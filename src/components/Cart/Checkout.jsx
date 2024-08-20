@@ -28,6 +28,9 @@ const Checkout = (props) => {
     event.preventDefault();
     const errors = formValidate();
     setFormErrors(errors);
+    if (Object.keys(errors).length === 0) {
+      props.onSubmit(formData);
+    }
   };
 
   return (
@@ -50,14 +53,24 @@ const Checkout = (props) => {
               setFormData({ ...formData, [field]: e.target.value })
             }
           />
+          {formErrors[field] && <p>{formErrors[field]}</p>}
         </div>
       ))}
       <div className={classes.actions}>
         <button type="button" onClick={props.onCancel}>
           Cancel
         </button>
-        <button className={classes.submit}>Confirm</button>
+        <button className={classes.submit}>
+          {props.isOrderSubmitting ? "Submitting.." : "Confirm"}
+        </button>
       </div>
+      {props.orderSubmissionError !== null ? (
+        <p className={classes.orderSubmissionError}>
+          {props.orderSubmissionError}
+        </p>
+      ) : (
+        ""
+      )}
     </form>
   );
 };
