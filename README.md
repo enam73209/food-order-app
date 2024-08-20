@@ -1,6 +1,6 @@
 # 🍕 Simple Food Order App
 
-This project is a **Simple Food Order Application** developed using **React** and the **Vite** build tool. It provides an easy-to-use interface for selecting food items and managing them in a shopping cart, showcasing the power of React's state management and Vite's fast build times and Hot Module Replacement (HMR).
+This project is a **Simple Food Order Application** developed using **React** , **Firebase** and the **Vite** build tool. It provides an easy-to-use interface for selecting food items and managing them in a shopping cart, showcasing the power of React's state management and Vite's fast build times and Hot Module Replacement (HMR).
 
 ## 🚀 Getting Started
 
@@ -30,6 +30,7 @@ Before you begin, ensure you have the following installed:
 - **Vite**: A modern frontend build tool that provides lightning-fast HMR.
 - **JSX**: For rendering UI components.
 - **CSS**: Styling the components for a clean and responsive UI.
+- **Firebase**: For fetching meals and placing orders.
 
 ### React State Management:
 
